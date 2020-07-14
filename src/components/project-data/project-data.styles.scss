@@ -1,7 +1,13 @@
-.root {
-    max-width: 345px;
-}
+.project-page-content-container {
+    display: flex;
 
-.media {
-    height: 140px;
+    .project-description-container {
+        width: 40%;
+        margin: auto;
+    }
+
+    .project-data-container {
+        width: 40%;
+        margin: auto;
+    }
 }
