@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Typography from '@material-ui/core/Typography';
 import Tabletop from 'tabletop';
 
 import './project-data.styles.scss';
@@ -31,7 +32,9 @@ class ProjectData extends Component {
             {data.map(obj => (
               <div key={obj.title} className='project-data-list'>
                 <div className='inner-project-data-container'>
-                  <div className='project-title project-data-item'>{obj.title}</div>
+                  <Typography color="textSecondary">
+                    <h1 className='project-title project-data-item'>{obj.title}</h1>
+                  </Typography>
                   <div className='project-data-item'>{obj.description}</div>
                   <div className='project-data-item'>{obj.live_url}</div>
                   <div className='project-data-item'>{obj.github_url}</div>
